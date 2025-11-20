@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#111111">
+    <link rel="stylesheet" href="./styles/index.css">
+    <title>Estilo F - Barbearia</title>
+    <link rel="manifest" href="/manifest.json">
+</head>
+
+<body>
+
+    <header>
+        <span class="logo">ESTILO F</span>
+        <span class="slogan">Sua melhor versão começa na autoestima.</span>
+    </header>
+
+    <main>
+
+        <section class="estilof-imagem"><img src="" alt=""></section>
+        <form class="formulario-login">
+            <p>PREENCHA ESTAS INFORMAÇÕES</p>
+            <input type="text" name="nome-usuario" id="nome-usuario" placeholder="Seu nome">
+            <input id="telefone" name="telefone" type="tel" placeholder="(12) 34567-8910" inputmode="tel" maxlength="15"
+                pattern="^\(\d{2}\)\s?\d{5}-\d{4}$" required aria-describedby="telHelp" />
+            <div>
+                <input type="checkbox" name="permitir-salvar" id="permitir-salvar">
+                <label for="permitir-salvar">Autorizo o armazenamento destas informações.</label>
+            </div>
+
+            <input type="submit" class="continuar" value="CONTINUAR">
+        </form>
+    </main>
+    <script>
+        if ("serviceWorker" in navigator) {
+            window.addEventListener("load", () => {
+                navigator.serviceWorker
+                    .register("/sw.js")
+                    .then(() => console.log("SW registrado"))
+                    .catch(err => console.log("Erro no SW:", err));
+            });
+        }
+    </script>
+    <script src="./scripts/regex.js"></script>
+    <script src="./scripts/main.js"></script>
+
+</body>
+
+</html>

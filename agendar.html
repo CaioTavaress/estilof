@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="gold">
+    <title>ESTILO F - Agendamentos</title>
+    <link rel="stylesheet" href="./styles/agendar.css">
+</head>
+
+<body>
+
+    <header>
+        <div id="titulo">ESTILO F</div>
+        <input type="button" class="menu-agendar">
+
+        <nav class="menu-person">
+            <div class="carousel">
+                <div class="character active">
+                    <span class="titulo">Matheus</span>
+                    <img src="https://picsum.dev/150/200" alt="Personagem 1">
+                </div>
+                <div class="character">
+                    <span class="titulo">Fabiana</span>
+                    <img src="https://picsum.dev/150/200" alt="Personagem 2">
+                </div>
+                <div class="character">
+                    <span class="titulo">Rafaela</span>
+                    <img src="https://picsum.dev/150/200" alt="Personagem 3">
+                </div>
+            </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+        <section class="dias-agendamento"></section>
+        <section class="horarios-agendamentos"></section>
+
+        <section class="tipo-servico">
+            <label for="servico">SELECIONE O TIPO DE SERVIÇO</label>
+            <input type="button" value="Selecione ..." id="servico">
+        </section>
+        <input type="button" value="AGENDAR" id="agendar">
+    </main>
+
+    <script src="./scripts/agendar.js"></script>
+    <script src="./scripts/main.js"></script>
+</body>
+
+</html>

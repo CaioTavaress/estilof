@@ -1,0 +1,158 @@
+/* Reset básico e moderno */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Remove estilos padrões de listas */
+ul, ol {
+  list-style: none;
+}
+
+/* Remove estilização de links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Imagens responsivas por padrão */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Formulários sem estilo zoado do navegador */
+input, button, textarea, select {
+  font: inherit;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+/* Botão clicável */
+button {
+  cursor: pointer;
+}
+
+/* Remove comportamento bizarro do Chrome no input number */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* HTML & body em modo clean */
+html, body {
+  width: 100%;
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Stack+Sans+Text:wght@200..700&display=swap');
+
+
+:root {
+    --font : "Jost", sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+body {
+    background: #111;
+    color: white;
+}
+
+header {
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+   justify-content: center;
+   text-indent: 2rem;
+}
+    .logo {
+        font-size: 3rem;
+        font-family: var(--font);
+        font-weight: 600;
+    }
+    .slogan {
+        font-family: var(--font);
+        font-weight: 600;
+    }
+main {
+    width: 100vw;
+    height: 85vh;
+    display: grid;
+    grid-template-rows: 5fr 3fr;
+    gap: 2rem;
+   justify-items: center;
+}
+
+
+.estilof-imagem {
+    background: gray;
+    width: 90vw;
+    height: 100%;
+}
+
+.formulario-login {
+    width: 90vw;
+    height: auto;
+    padding: 1rem;
+    display: grid;
+    grid-template-rows: 1fr 1.5fr 1.5fr 0.3fr 1.5fr;
+    gap: 1rem;
+}   
+    .formulario-login  p {
+        font-family: var(--font);
+        font-weight: 800;
+    }
+
+#nome-usuario, #telefone {
+    border: 2px solid #999999;
+    border-radius: 10px;
+    text-indent: 3.5rem;
+    color: white;
+    font-family: var(--font);
+}
+    #nome-usuario {
+        background: url('../images/user.png') no-repeat ;
+        background-size: 8%;
+        background-position: 0.8rem center;
+    }
+    #telefone {
+        background: url('../images/phone-receiver-silhouette.png') no-repeat ;
+        background-size: 7%;
+        background-position: 1rem center;
+    }
+
+.continuar {
+    background: gold;
+    padding: 0 5%;
+    font-family: var(--font);
+    font-weight: 900;
+    border-radius: 10px;
+}
+
+
+label[for=permitir-salvar]{
+    font-family: var(--font);
+    font-size: 0.9rem;
+    
+}
